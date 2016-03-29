@@ -13,6 +13,7 @@ matrix:
     - env: PLONE_VERSION=4.2
   fast_finish: true
 install:
+- pip install -vvv flake8-print
 - sed -ie "s#test-4.3.x.cfg#test-$PLONE_VERSION.x.cfg#" buildout.cfg
 - python bootstrap.py
 - bin/buildout annotate
