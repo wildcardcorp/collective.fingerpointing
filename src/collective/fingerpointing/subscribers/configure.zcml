@@ -97,4 +97,7 @@
       handler=".iterate_logger"
       />
 
+
+  <subscriber handler=".request_logger.request_logger" />
+
 </configure>

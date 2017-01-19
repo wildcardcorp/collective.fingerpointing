@@ -2,9 +2,10 @@
 from zope.globalrequest import getRequest
 
 
-def get_request_information():
-    try:
+def get_request_information(request=None):
+    if request is None:
         request = getRequest()
+    try:
         user = request['AUTHENTICATED_USER']
         ip = request['REMOTE_ADDR']
         return user, ip

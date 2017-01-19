@@ -41,3 +41,11 @@ class IFingerPointingSettings(Interface):
         ),
         default=True,
     )
+
+    audit_requests = schema.Bool(
+        title=_(u'Audit Requests?'),
+        description=_(
+            u'This will log every url a logged in user visits'
+        ),
+        default=False,
+    )

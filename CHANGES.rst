@@ -4,7 +4,10 @@ Changelog
 1.2b2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+New:
+
+- Be able to do request logging
+  [vangheem]
 
 
 1.2b1 (2016-09-28)
