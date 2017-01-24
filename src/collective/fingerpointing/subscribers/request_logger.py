@@ -42,7 +42,7 @@ def request_logger(event):
             user_id = user.name
         except AttributeError:
             try:
-                user_id = user.getId()
+                user_id = user.getUserName()
             except AttributeError:
                 pass
 
